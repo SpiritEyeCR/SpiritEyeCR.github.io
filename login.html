@@ -1,0 +1,28 @@
+<form id="loginForm" action="/login" method="post">
+  <label for="username">Nombre de usuario:</label>
+  <input type="text" id="username" name="username" />
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password" />
+  <button type="submit">Iniciar sesión</button>
+</form>
+
+<script>
+  document
+    .getElementById("loginForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+      // Obtiene los valores del formulario
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Verifica las credenciales (ejemplo básico)
+      if (username === "admin" && password === "admin123") {
+        // Redirige al usuario a admin.html si las credenciales son correctas
+        window.location.href = "/admin.html";
+      } else {
+        // Muestra un mensaje de error si las credenciales son incorrectas
+        alert("⚠ Credenciales incorrectas ⚠");
+      }
+    });
+</script>

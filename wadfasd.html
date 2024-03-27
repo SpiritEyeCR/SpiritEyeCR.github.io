@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración</title>
+  </head>
+  <body>
+    <h1>Panel de Administración</h1>
+
+    <h2>Galería de Imágenes</h2>
+    <div id="imageGallery">
+      <!-- Aquí se mostrarán las imágenes de la galería -->
+    </div>
+
+    <h2>Subir Nueva Imagen</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="imageFile" name="imageFile" accept="image/*" />
+      <button type="submit">Subir Imagen</button>
+    </form>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
