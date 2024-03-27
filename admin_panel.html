@@ -1,0 +1,24 @@
+<!-- admin_panel.html -->
+
+<form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="file-input" name="file">
+    <button type="submit">Subir imagen</button>
+</form>
+
+<script>
+document.getElementById('upload-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var fileInput = document.getElementById('file-input');
+    var file = fileInput.files[0];
+
+    if (file) {
+        uploadImage(file);
+    } else {
+        console.error('No se seleccionó ningún archivo.');
+    }
+});
+
+function uploadImage(file) {
+    // Autenticación y configuración de la solicitud POST a la API de GitHub para cargar el archivo
+}
+</script>
