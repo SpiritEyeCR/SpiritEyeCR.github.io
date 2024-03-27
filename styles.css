@@ -316,3 +316,27 @@ footer {
     border-radius: 5px;
     display: none;
 }
+
+.icon {
+    width: 100px; /* Ajusta el tamaño según tu necesidad */
+    height: 100px;
+    margin-bottom: 20px; /* Espacio entre el icono y el título */
+}
+
+.title {
+    font-size: 24px; /* Ajusta el tamaño según tu necesidad */
+    margin-bottom: 20px; /* Espacio entre el título y las columnas */
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    width: 50%; /* Divide en dos columnas */
+    padding: 20px;
+    border: 1px solid #ccc; /* Bordes suaves */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 10px; /* Espacio entre las columnas */
+}
