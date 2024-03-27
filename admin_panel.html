@@ -22,3 +22,22 @@ function uploadImage(file) {
     // Autenticación y configuración de la solicitud POST a la API de GitHub para cargar el archivo
 }
 </script>
+
+<!-- admin_panel.html -->
+
+<ul id="image-list">
+    <!-- Listar imágenes y botones de eliminación -->
+</ul>
+
+<script>
+document.getElementById('image-list').addEventListener('click', function(event) {
+    if (event.target.classList.contains('delete-button')) {
+        var imageFileName = event.target.dataset.fileName;
+        deleteImage(imageFileName);
+    }
+});
+
+function deleteImage(imageFileName) {
+    // Autenticación y configuración de la solicitud DELETE a la API de GitHub para eliminar el archivo
+}
+</script>
